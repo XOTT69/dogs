@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f8f4">
+  <meta name="description" content="Українськомовний помічник із тренування собаки. Вправи з винагородою, персональний план і журнал прогресу.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Поруч">
+  <title>Поруч — тренування собаки</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icon-192.png">
+  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">До вмісту</a>
+  <aside class="sidebar">
+    <a class="brand" href="#today" aria-label="Поруч, головна"><img src="./assets/icon-192.png" alt="" width="39" height="39"><span>поруч<span>.</span><small>КІНОЛОГІЯ ВДОМА</small></span></a>
+    <nav aria-label="Головна навігація" id="nav"></nav>
+    <button class="side-install" data-action="install"><span data-icon="download"></span> Встановити застосунок</button>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><a class="mobile-brand brand" href="#today"><img src="./assets/icon-192.png" alt="" width="34" height="34"><span>поруч<span>.</span></span></a>
+      <span class="date" id="date"></span>
+      <a class="profile-link" href="#profile"><span class="avatar" data-icon="paw"></span><span id="top-name">Мій профіль</span></a>
+    </header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>Увімкніть JavaScript, щоб відкрити вправи й журнал.</noscript>
+</body>
+</html>
